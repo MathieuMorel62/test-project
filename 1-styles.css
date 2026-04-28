@@ -253,12 +253,11 @@ body {
 
 /* SERVICES */
 .services {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 58px;
-    max-width: 1260px;
+    max-width: 1000px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .service {
