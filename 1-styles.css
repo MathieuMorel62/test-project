@@ -135,6 +135,80 @@ body {
     padding-bottom: 60px;
 }
 
+/* ICONE */
+[class^="holberton_school-icon-"] {
+    display: block;
+    margin-bottom: 15px;
+}
+
+[class^="holberton_school-icon-"]::before {
+    font-size: 100px;
+    color: var(--primary-color);
+}
+
+/* SECTION WHAT WE DO */
+.what-we-do {
+    max-width: 1260px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 145px 0 115px;
+    max-width: 1260px;
+}
+
+.what-we-do .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.subtitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #071629;
+}
+
+.subtext {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 58px;
+    max-width: 1260px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+.service h3 {
+    color: #071629;
+    font-weight: 600;
+}
+
+.service p {
+    color: #071629;
+    line-height: 1.857;
+}
+
+@media (max-width: 768px) {
+    .what-we-do {
+        max-width: 691px;
+    }
+}
+
 @media (max-width: 480px) {
 
     /* hide menu by default */
@@ -205,77 +279,9 @@ body {
         align-items: center;
         display: flex;
     }
-}
 
-/* ICONE */
-[class^="holberton_school-icon-"] {
-    display: block;
-    margin-bottom: 15px;
+    /* WHAT WE DO */
+    .what-we-do {
+        max-width: 338px;
+    }
 }
-
-[class^="holberton_school-icon-"]::before {
-    font-family: "holberton_school-icon";
-    font-size: 64px;
-    color: var(--primary-color);
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* SECTION WHAT WE DO */
-.what-we-do {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 80px 20px;
-    max-width: 1260px;
-    margin: 0 auto;
-}
-
-.what-we-do .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.subtitle {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #071629;
-}
-
-.subtext {
-    max-width: 600px;
-    margin: 0 auto 60px;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* SERVICES */
-.services {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 58px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.service {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-    padding: 20px;
-}
-
-.service h3 {
-    color: #071629;
-    font-weight: 600;
-}
-
-.service p {
-    color: #071629;
-    line-height: 1.857;
-}
-
