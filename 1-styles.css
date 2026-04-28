@@ -229,10 +229,12 @@ body {
     background-color: #ffffff;
     text-align: center;
     padding: 80px 20px;
+    max-width: 1260px;
+    margin: 0 auto;
 }
 
 .what-we-do .container {
-    max-width: 1260px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -254,7 +256,7 @@ body {
 /* SERVICES */
 .services {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 58px;
     max-width: 1000px;
     margin: 0 auto;
